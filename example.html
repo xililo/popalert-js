@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POPALERT-JS</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./popalert-js.css">
+</head>
+
+<body>
+    <h1>POPALERT-JS plugin</h1>
+    <p>This is a Jquery-dependent plugin that can be used to show nice popup alerts</p>
+    <script src="./popalert-js.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Example usage
+            $.popup({
+                message: 'This is an info popup!',
+                duration: 6000,
+                type: 'info'
+            });
+
+            $.popup({
+                message: 'This is a success popup!',
+                duration: 5000,
+                type: 'success'
+            });
+
+            $.popup({
+                message: 'This is a danger popup!',
+                duration: 4000,
+                type: 'danger'
+            });
+
+            $.popup({
+                message: 'This is a primary popup!',
+                duration: 3000,
+                type: 'primary'
+            });
+        });
+    </script>
+</body>
+
+</html>
